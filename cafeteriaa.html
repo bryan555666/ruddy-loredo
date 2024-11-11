@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cafe CLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8B4513;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #808080;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cafe CLC</h1>
+    </header>
+	<center>
+	<img src="imagen/cafeteria.jpg"alt="cafeteria">
+	</center>
+    <div class="container">
+        
+        <div class="menu-category">
+            <h2>EXPRESO</h2>
+            <div class="menu-item">
+                
+                <span>Expreso - 100 bs </span>  <input type = "checkbox" name = "envio" value = "si"> 
+            </div>
+            <div class="menu-item">
+                
+                <span>Americano - 105 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Cafe mocha - 120 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Cafe late - 140 bs</span> <input type = "checkbox" name = "envio" value = "si"> 
+            </div>
+            <div class="menu-item">
+                
+                <span>Capuchino - 105 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Chocolate y menta - 105 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Late de vainilla - 120 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>BEBIDAS FRÍAS</h2>
+            <div class="menu-item">
+               
+                <span>Jugo de naranja - 65 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Jugo de manzana - 50 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Late helado - 60 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item"> </span>  
+                
+                <span>Mocha helado - 65 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Te helado - 40 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+        </div>
+		<div class="menu-category">
+            <h2>POSTRES</h2>
+            <div class="menu-item">
+               
+                <span>Tarta de chocolate - 30 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Tiramisu clasico - 35 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Brownie de nueces - 25 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Panque de limon - 20 bs</span> <input type = "checkbox" name = "envio" value = "si">
+            </div>
+            <div class="menu-item">
+                
+                <span>Tarta de manzana - 30 bs</span>  <input type = "checkbox" name = "envio" value = "si">
+            </div>
+			<div class="menu-item">
+                
+                <span>Galleta de avena y chocolate - 15 bs</span>  <input type = "checkbox" name = "envio" value = "si">
+            </div>
+			<div class="menu-item">
+                
+                <span>Mousse de maracuya - 35 bs</span>  <input type = "checkbox" name = "envio" value = "si">
+            </div>
+        </div>
+		
+    <form action = " prueba.php" method = "post">
+	<H2> ENTREGAS A DOMICILIO </H2>
+Ingrese Nombre:<input type = "text" name = "nombre"> <br>
+<br>
+Ingrese Contraseña: <input type = "password" name = "contraseña"> <br>
+<br>
+¿QUIEN RECIVIRA EL PEDIDO? <br>
+Genero: <br>
+<input type = "checkbox" name = "Hombre" value = "si"> Hombre <br>
+<input type = "checkbox" name = "Mujer" value = "si"> Mujer <br>
+<input type = "checkbox" name = "Omitir" value = "si"> Omitir <br>
+		<br>
+¿QUE VEHICULO PREFIERE? <br>
+Vehiculo: <br>
+<input type = "checkbox" name = "Moto" value = "si"> Moto Presio 2 Bs <br>
+<input type = "checkbox" name = "Coche" value = "si" > Coche Presio 5 Bs<br>
+		  <br>
+¿QUE PAGO PREFIERE? <br>
+Pago: <br>
+<input type = "checkbox" name = "Efectivo" value = "si"> Efectivo <br>
+<input type = "checkbox" name = "Tarjeta" value = "si" > Tarjeta <br>
+<input type = "checkbox" name = "QR" value = "si" > QR <br>
+<br>
+TIPO DE ENVIO<BR>
+		  <br>
+<select name ="Envio" multiple>
+<option value = "r"> Economico </option>
+<option value = "g"> Normal </option>
+<option value = "b"> Premium </option>
+</select>
+<br>
+<br>
+<select name ="Envio" size = "1">
+<option value = "r"> Economico </option>
+<option value = "g"> Normal </option>
+<option value = "b"> Premium </option>
+</select>	
+<BR>	  
+<br>
+
+¿INGRESE ALGUN COMENTARIO O RECOMENDACION? <BR>
+<BR>
+<textarea cols=20 rows =10 name ="texto">
+
+</textarea>
+<br>  <br>
+<input type = "submit"> <br>
+<br>
+<center>
+<div class= "content" id="video">
+<video Width="640" height="360" controls>
+<source src="video/video2.mp4" type="video/mp4">
+</video>
+</div>
+</center>
+<div class="content" id="audio">
+        <h2>Música ambiental</h2>
+        <audio controls>
+            <source src="audio/music.mp4" type="audio/mp3">
+            Tu navegador no soporta la reproducción de audios.
+        </audio>
+    </div>
+
+</form>
+</body>
+</html>
